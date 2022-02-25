@@ -1,0 +1,96 @@
+* {
+    background-color: rgb(60, 100, 110);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background: rgb(3, 59, 66);
+    height: 900px;
+    margin: 10% auto 0;
+
+    .tower {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 40px;
+        background: rgb(92, 80, 80);
+        height: 90%;
+        max-height: 500px;
+        width: 90%;
+
+        &__bottom {
+            height: 100%;
+            background: transparent;
+            border-bottom: 20px solid red;
+        }
+
+        &__mast--1,
+        &__mast--2,
+        &__mast--3 {
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            background: red;
+            width: 20px;
+
+            .ring__wrapper {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                bottom: 0;
+                background: transparent;
+                padding-bottom: 20px;
+                left: -50px;
+
+                .ring {
+                    display: block;
+                    width: 40px;
+                    background: green;
+                    text-align: center;
+                    border: 1px solid black;
+                    padding: 10px;
+
+                    &--1 {
+                        width: 40px;
+                    }
+
+                    &--2 {
+                        width: 60px;
+                    }
+
+                    &--3 {
+                        width: 80px;
+                    }
+
+                    &--4 {
+                        width: 100px;
+                    }
+
+                    &--5 {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+
+        &__mast--1 {
+            left: 20%;
+        }
+
+        &__mast--2 {
+            left: 50%;
+        }
+
+        &__mast--3 {
+            left: 80%;
+        }
+    }
+}

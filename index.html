@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hanoi tower</title>
+        <link rel="stylesheet" href="css/style.min.css">
+
+
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="tower">
+                <div class="tower__bottom">
+
+                </div>
+                <div class="tower__mast--1">
+                    <div id="drag1" ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                        class="ring__wrapper">
+                        <div draggable="true" ondragstart="drag(event)"
+                            id="ring1" class="ring ring--1">1</div>
+                        <div draggable="true" ondragstart="drag(event)"
+                            id="ring2" class="ring ring--2">2</div>
+                        <div draggable="true" ondragstart="drag(event)"
+                            id="ring3" class="ring ring--3">3</div>
+                        <div draggable="true" ondragstart="drag(event)"
+                            id="ring4" class="ring ring--4">4</div>
+                        <div draggable="true" ondragstart="drag(event)"
+                            id="ring5" class="ring ring--5">5</div>
+                    </div>
+
+                </div>
+                <div class="tower__mast--2">
+                    <div id="drag2" ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                        class="ring__wrapper">
+                    </div>
+                </div>
+                <div class="tower__mast--3">
+                    <div id="drag3" ondrop="drop(event)"
+                        ondragover="allowDrop(event)"
+                        class="ring__wrapper">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
